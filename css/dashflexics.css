@@ -1,0 +1,603 @@
+/*********************************************
+ * DashFlex CSS styling, v0.11.3
+ * Author: 2011yuhan@gamil.com 2016
+ *********************************************/
+
+
+/* no padding block, page container */
+
+[class*="df-"][class*="-block-"] {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #555555;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    border-radius: 0px;
+    box-sizing: border-box;
+    line-height: 1.42857143;
+    background-color: #fff;
+    display: block;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+
+/* flex container */
+
+[class*="df-"][class*="-flex-"] {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* direc column */
+
+[class*="df-"][class*="-flex"][class*="-ver"] {
+    flex-flow: column nowrap;
+}
+
+
+/* item from top */
+
+[class*="df-"][class*="-flex"][class*="-start"] {
+    align-items: flex-start;
+}
+
+
+/*from end*/
+
+[class*="df-"][class*="-flex-"][class*="-end-"] {
+    align-items: flex-end;
+}
+
+
+/*item stretch*/
+
+[class*="df-"][class*="-flex-"][class*="-stre-"] {
+    align-items: stretch;
+}
+
+
+/*item baseline*/
+
+[class*="df-"][class*="-flex-"][class*="-bsl-"] {
+    align-items: baseline;
+}
+
+
+/* content center*/
+
+[class*="df-"][class*="-flex-"][class*="-jfmid-"] {
+    justify-content: center;
+}
+
+
+/* content left*/
+
+[class*="df-"][class*="-flex-"][class*="-jfstart-"] {
+    justify-content: flex-start;
+}
+
+
+/* content right*/
+
+[class*="df-"][class*="-flex-"][class*="-jfend-"] {
+    justify-content: flex-end;
+}
+
+
+/* content around*/
+
+[class*="df-"][class*="-flex-"][class*="-jfsp-"] {
+    justify-content: space-around;
+}
+
+
+/* content around*/
+
+[class*="df-"][class*="-flex-"][class*="-jfsb-"] {
+    justify-content: space-between;
+}
+
+
+/*navigation*/
+
+[class*="df-"][class*="-nav-"] {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+[class*="df-"][class*="-nav-"][class*="-fix-"] {
+    position: fixed;
+}
+
+
+/* Profile container*/
+
+[class*="df-"][class*="-profile-"] {
+    float: none;
+    margin: 0px auto;
+    width: 50%;
+    height: 50%;
+}
+
+
+/* Profile Image (resp) */
+
+[class*="df-"][class*="-profile-"] img {
+    /* border-radius: 50%; */
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0px none;
+}
+
+
+/*head, will show on both small & large screen*/
+
+[class*="df-"][class*="-head-"] {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+/* toggle menu btn, show on small */
+
+[class*="df-"][class*="-ham-"] {
+    position: relative;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+[class*="df-"][class*="-menu-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    display: none;
+}
+
+[class*="df-"][class*="-menu-"] [class*="df-"][class*="-flex-"] {
+    list-style: none;
+}
+
+
+/* blur*/
+
+[class*="df-"][class*="-blur-"] {
+    opacity: .5;
+}
+
+
+/*title text*/
+
+[class*="df-"][class*="-title-"] {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+/*larger title*/
+
+[class*="df-"][class*="-title-"][class*="-bg-"] {
+    font-size: 34px;
+}
+
+
+/*smaller title*/
+
+[class*="df-"][class*="-title-"][class*="-sm-"] {
+    font-size: 16px;
+}
+
+
+/* subtitle, using <small> tag*/
+
+[class*="df-"][class*="-title-"] small {
+    white-space: nowrap;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 300;
+}
+
+[class*="df-"][class*="-title-"][class*="-bg-"] small {
+    font-size: 24px;
+}
+
+[class*="df-"][class*="-title-"][class*="-sm-"] small {
+    font-size: 11px;
+}
+
+
+/*  space, padding*/
+
+[class*="df-"][class*="-sp-"] {
+    padding: 10px;
+}
+
+
+/*  space, margin*/
+
+[class*="df-"][class*="-mg-"] {
+    margin: 10px;
+}
+
+
+/* text allign center*/
+
+[class*="df-"][class*="-tac-"] {
+    text-align: center;
+}
+
+
+/* card view, with light shadow */
+
+[class*="df-"][class*="-card-"] {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(202, 199, 199, 0.83);
+    box-shadow: 0px 0px 4px 0px rgba(202, 199, 199, 0.83);
+    border: 1px solid rgba(195, 195, 195, 0.83);
+}
+
+
+/* inherit color shadow*/
+
+[class*="df-"][class*="-sdcard-"] {
+    -webkit-box-shadow: 0px 0px 4px 0px;
+    box-shadow: 0px 0px 4px 0px;
+    border: 1px solid;
+}
+
+
+/* remove default decoration like the <button> style*/
+
+[class*="df-"][class*="-box-"] {
+    border-radius: 0px;
+    border: 0px;
+}
+
+
+/* button */
+
+[class*="df-"][class*="-btn-"] {
+    text-align: center;
+    display: inline-block;
+    min-width: 10em;
+    padding: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* button-inverse */
+
+[class*="df-"][class*="-btn-"][class*="-inv-"] {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/* click-able effects, applies to -btn- */
+
+[class*="df-"][class*="-clickable-"],
+[class*="df-"][class*="-btn-"] {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+[class*="df-"][class*="-clickable-"]:hover,
+[class*="df-"][class*="-clickable-"]:focus,
+[class*="df-"][class*="-btn-"]:hover,
+[class*="df-"][class*="-btn-"]:focus {
+    filter: drop-shadow(1px 1px 2px grey) contrast(140%);
+    -webkit-filter: drop-shadow(1px 1px 2px grey) contrast(140%);
+    text-decoration: none;
+}
+
+[class*="df-"][class*="-clickable-"]:acitve,
+[class*="df-"][class*="-btn-"]:acitve {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+[class*="df-"][class*="-hvrmore-"]:focus,
+[class*="df-"][class*="-hvrmore-"]:hover,
+[class*="df-"][class*="-hvrmore-"]:active {
+    -ms-transform: scale(1.15);
+    /* IE 9 */
+    -webkit-transform: scale(1.15);
+    /* Safari */
+    transform: scale(1.15);
+    letter-spacing: 1px;
+    background-color: #0e6eb4;
+}
+
+[class*="df-"][class*="-clickable-"][disabled],
+[class*="df-"][class*="-disable-"] {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+
+
+/* add padding to top & bottom*/
+
+[class*="df-"][class*="-pad-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* add padding to left & right*/
+
+[class*="df-"][class*="-gap-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*margin left*/
+
+[class*="df-"][class*="-mrgl-"] {
+    margin-left: 15px;
+}
+
+
+/* theme & coloring */
+
+
+/* active or inactive*/
+
+[class*="df-"][class*="-active-"] {
+    background-color: rgba(120, 188, 125, 0.4);
+    color: #2A7538;
+    border-color: rgba(0, 168, 0, 0.22);
+}
+
+[class*="df-"][class*="-inactive-"] {
+    background-color: rgba(188, 180, 180, 0.4);
+    color: #cc3e3e;
+    border-color: rgba(204, 62, 62, 0.55);
+}
+
+[class*="df-"][class*="-blue-"] {
+    background-color: #3598DC;
+    color: white;
+}
+
+[class*="df-"][class*="-skyblue-"] {
+    background-color: #59ace5;
+    color: white;
+}
+
+[class*="df-"][class*="-green-"] {
+    background-color: #50A550;
+    color: white;
+}
+
+[class*="df-"][class*="-white-"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: grey;
+}
+
+[class*="df-"][class*="-purple-"] {
+    background-color: #8E44AD;
+    color: white;
+}
+
+[class*="df-"][class*="-purpletxt-"] {
+    color: #5a0a7c;
+}
+
+[class*="df-"][class*="-red-"] {
+    background-color: #ad4444;
+    color: white;
+}
+
+[class*="df-"][class*="-silver-"] {
+    background-color: #CECECE;
+    color: #585858;
+}
+
+[class*="df-"][class*="-yellow-"] {
+    background-color: #dbb127;
+    color: white;
+}
+
+
+/*select & option*/
+
+[class*="df-"][class*="-select-"] option {
+    padding: inherit;
+    border-right: 1px solid grey;
+}
+
+
+/*responsive*/
+/*grid*/
+[class*="df-"][class*="-col-"] {
+    min-height: 1px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*toogle*/
+[class*="df-"][class*="-tgl-"] {
+    width:0;
+    transition:all 0.2s linear;
+    
+}
+
+
+
+
+/* apply xs col */
+
+[class*="df-"][class*="-col-"][class*="-xs-"] {
+    width: 10%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs2-"] {
+    width: 20%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs3-"] {
+    width: 30%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs4-"] {
+    width: 40%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs5-"] {
+    width: 50%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs6-"] {
+    width: 60%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs7-"] {
+    width: 70%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs8-"] {
+    width: 80%;
+}
+
+[class*="df-"][class*="-col-"][class*="-xs9-"] {
+    width: 90%;
+}
+
+@media (max-width:400px) {
+    /*    hide on small screen*/
+    [class*="df-"][class*="-respsm-"] {
+        display: none;
+    }
+}
+
+
+/* >sm screen  */
+
+@media (min-width: 768px) {
+    /*    enlarge head*/
+    [class*="df-"][class*="-head-"] {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /*    show nav-toggle*/
+    [class*="df-"][class*="-ham-"] {
+        display: none;
+    }
+    /*    show menu*/
+    [class*="df-"][class*="-menu-"] {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin: 0;
+    }
+    /*    show tgl*/
+    [class*="df-"][class*="-tgl-"][class*="-s-"] {
+        max-width:none;
+    }
+    /* apply sm col */
+    [class*="df-"][class*="-col-"][class*="-sm-"] {
+        width: 10%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm2-"] {
+        width: 20%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm3-"] {
+        width: 30%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm4-"] {
+        width: 40%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm5-"] {
+        width: 50%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm6-"] {
+        width: 60%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm7-"] {
+        width: 70%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm8-"] {
+        width: 80%;
+    }
+    [class*="df-"][class*="-col-"][class*="-sm9-"] {
+        width: 90%;
+    }
+}
+
+
+/* >md screen  */
+
+@media (min-width: 992px) {
+    /*show tgl*/
+    [class*="df-"][class*="-tgl-"][class*="-m-"] {
+         max-width:none;
+    }
+    
+    /* apply md col */
+    [class*="df-"][class*="-col-"][class*="-md1-"] {
+        width: 10%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md2-"] {
+        width: 20%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md3-"] {
+        width: 30%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md4-"] {
+        width: 40%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md5-"] {
+        width: 50%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md6-"] {
+        width: 60%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md7-"] {
+        width: 70%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md8-"] {
+        width: 80%;
+    }
+    [class*="df-"][class*="-col-"][class*="-md9-"] {
+        width: 90%;
+    }
+}
+
+
+/* >lg screen  */
+
+@media (min-width: 1200px) {}
